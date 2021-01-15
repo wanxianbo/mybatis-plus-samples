@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.mybatisplus.samples.crud.mapper.RoleMapper">
+  <resultMap id="BaseResultMap" type="com.baomidou.mybatisplus.samples.crud.entity.Role">
+    <!--@Table `role`-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`
+  </sql>
+  <sql id="Join_Column_List">
+    <!--@mbg.generated-->
+    role.id as role_id,
+    role.name as role_name
+  </sql>
+  <resultMap id="JoinResultMap" type="com.baomidou.mybatisplus.samples.crud.entity.Role">
+    <!--@mbg.generated-->
+    <id column="role_id" property="id"/>
+    <result column="role_name" property="name"/>
+  </resultMap>
+</mapper>
