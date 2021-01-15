@@ -71,10 +71,15 @@
                 <artifactId>mybatis-plus-generator</artifactId>
                 <version>${mybatisplus.version}</version>
             </dependency>
-            <dependency>
+            <!--<dependency>
                 <groupId>p6spy</groupId>
                 <artifactId>p6spy</artifactId>
                 <version>3.8.5</version>
+            </dependency>-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.22</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
