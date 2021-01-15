@@ -57,6 +57,7 @@ public class SampleTest {
         log.error("------------------------------------------------updateById--------------------------------------------------------");
         commonMapper.updateById(new Common().setId(ids.remove(0)).setName("老王"));
         log.error("------------------------------------------------update--------------------------------------------------------");
+        //commonMapper.update(new Common().setName("老王"), Wrappers.<Common>lambdaUpdate().eq(Common::getId,ids.remove(0)));
         commonMapper.update(new Common().setName("老王"), Wrappers.<Common>update().eq("id", ids.remove(0)));
         log.error("------------------------------------------------selectById--------------------------------------------------------");
         commonMapper.selectById(ids.remove(0));
