@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.mybatisplus.samples.md.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.baomidou.mybatisplus.samples.md.entity.User">
+    <!--@mbg.generated-->
+    <!--@Table `user`-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="grade" jdbcType="INTEGER" property="grade" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="user_state" jdbcType="INTEGER" property="userState" />
+    <result column="str_enum" jdbcType="VARCHAR" property="strEnum" />
+    <result column="operator" jdbcType="VARCHAR" property="operator" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, age, gender, grade, email, user_state, str_enum, `operator`
+  </sql>
+</mapper>
