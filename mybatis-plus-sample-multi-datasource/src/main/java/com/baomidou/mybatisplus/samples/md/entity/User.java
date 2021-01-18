@@ -6,13 +6,15 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 /**
  * @author wanxinabo
  * @date 2021/1/18
  */
 @Data
-@Builder
+//@Builder
+@Accessors(chain = true)
 @TableName(value = "`user`")
 public class User {
     /**
