@@ -23,4 +23,6 @@ public interface UserMapper extends BaseMapper<User> {
 
     UserRoleVo selectAllWithRoleById(@Param("id") Long id);
 
+    List<User> selectAllOrderByName();
+
 }
