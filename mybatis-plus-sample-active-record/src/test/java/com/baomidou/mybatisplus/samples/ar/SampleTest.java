@@ -52,9 +52,9 @@ public class SampleTest {
 
     @Test
     public void dSelect() {
-        Assert.assertEquals("ab@c.c", new User().setId(1L).selectById().getEmail());
+        Assert.assertEquals("test5@baomidou.com", new User().setId(1L).selectById().getEmail());
         User user = new User().selectOne(new QueryWrapper<User>().lambda().eq(User::getId, 2));
         Assert.assertEquals("Jack", user.getName());
-        Assert.assertTrue(3 == user.getAge());
+        Assert.assertTrue(2 == user.getAge());
     }
 }
